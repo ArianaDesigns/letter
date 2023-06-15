@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+	  <meta charset="UTF-8">
+		<title>Algo Nuevo que Aprendi Hacer</title>
+				<!--File Name: PFArianaQuinones4.html
+				-->
+			<link rel="stylesheet" href="recursos/css/PFArianaQuinones.css" />
+	</head>
+
+	<body>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+		
+			<img class="logo" onclick="window.location.href='PFArianaQuinones.html'" src=recursos/img/logo.png>
+				
+				<div class="topnav">
+				  <a class="active" href="PFArianaQuinones.html">Home</a>
+				  
+				  <a href="PFArianaQuinones2.html">For Gabriela</a>
+				  <a href="PFArianaQuinones3.html">Letters</a>
+				  <a href="PFArianaQuinones4.html">Algo Nuevo que Aprendi Hacer</a>
+				</div>
+				
+			<img src="recursos/img/writebanner.jpg" alt="write"> <br>
+	
+	<center>
+			<canvas id="myLetter" width="650" height="450"></canvas>
+	</center>
+	
+	<!-- contenido javascript --> 
+	
+			<script>
+				let isDrawing = false;
+				let x = 0;
+				let y = 0;
+
+				const myPics = document.getElementById("myLetter");
+				const context = myLetter.getContext("2d");
+
+
+				myLetter.addEventListener("mousedown", (e) => {
+				  x = e.offsetX;
+				  y = e.offsetY;
+				  isDrawing = true;
+				});
+
+				myLetter.addEventListener("mousemove", (e) => {
+				  if (isDrawing) {
+					drawLine(context, x, y, e.offsetX, e.offsetY);
+					x = e.offsetX;
+					y = e.offsetY;
+				  }
+				});
+
+				window.addEventListener("mouseup", (e) => {
+				  if (isDrawing) {
+					drawLine(context, x, y, e.offsetX, e.offsetY);
+					x = 0;
+					y = 0;
+					isDrawing = false;
+				  }
+				});
+
+				function drawLine(context, x1, y1, x2, y2) {
+				  context.beginPath();
+				  context.strokeStyle = "black";
+				  context.lineWidth = 1;
+				  context.moveTo(x1, y1);
+				  context.lineTo(x2, y2);
+				  context.stroke();
+				  context.closePath();
+				}
+			</script>
+	
+	<br><br><center>
+		<h2>¿Que te parece? Esta cool verdad? En la clase teniamos que hacer <br>
+		cosas con javascript y encontre como hacer una tablita para que<br>
+		escribas en ella! </h2><br></center>
+	
+		<footer>
+		  Milagros Quiñones ☺ Puerto Rico ☺ Para Gabriela
+		</footer>
+
+	</body>
+</html>

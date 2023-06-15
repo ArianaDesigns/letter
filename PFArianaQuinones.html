@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head> 
+	  <meta charset="UTF-8">
+		<title>Cartitas</title>
+				<!--File Name: PFArianaQuinones.html
+				-->
+			<link rel="stylesheet" href="recursos/css/PFArianaQuinones.css" />
+			<link rel="stylesheet" href="PFArianaQuinones2.html" />
+	</head>
+
+	<body>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+		
+		<img class="logo" onclick="window.location.href='PFArianaQuinones.html'" src=recursos/img/logo.png>
+			
+			<div class="topnav">
+			  <a class="active" href="PFArianaQuinones.html">Home</a>
+			  
+			  <a href="PFArianaQuinones2.html">For Gabriela</a>
+			  <a href="PFArianaQuinones3.html">Letters</a>
+			  <a href="PFArianaQuinones4.html">Algo Nuevo que Aprendi Hacer</a>
+			</div>
+			
+		<img src="recursos/img/welcomebanner.jpg" alt="welcome">
+
+	<!-- contenido javascript --> <br><br>
+
+    <h2 id="heading">New Message ☺ New Message ☺ New Message</h2>
+
+    <script>
+		var leftOffset = 0;
+
+		var moveHeading = function () {
+		  $("#heading").offset({ left: leftOffset });
+
+		  leftOffset++;
+
+		  if (leftOffset > 1000) {
+			leftOffset = 0;
+		  }
+		};
+
+		setInterval(moveHeading, 30);
+    </script>
+	
+		<div>
+			<button type="button" onclick="window.location.href='PFArianaQuinones2.html'"> 
+			<img class="button" src="recursos/img/carta2.png" /> 
+			</button>
+		</div>
+	
+	<h3>↑ open ↑</h3> <br>
+	
+		<footer>
+		  Milagros Quiñones ☺ Puerto Rico ☺ Para Gabriela
+		</footer>
+
+	</body>
+</html>

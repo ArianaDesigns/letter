@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-image: ("recursos/img/marjan-blan-_kUxT8WkoeY-unsplash.jpg");
+  display: grid;
+  place-content: center;
+  grid-gap: 2rem;
+  color: #493b38;
+  font-family: Helvetica;
+}
+
+.logo{
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: none;
+}
+
+.topnav {
+  background-color: #d62727;
+  overflow: visible;
+  display: inline-block;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffc83f;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffc83f;
+  color: white;
+}
+
+h2 {
+	color: #ffc83f;
+}
+
+h3 {
+	text-align: center;
+	padding-top: 1px;
+	color: #d62727;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  transition: transform 0.7s ease-in-out;
+  border: none;
+  background: none;
+}
+
+button:hover {
+  transform: rotate(360deg);
+}
+
+.button {
+  width: 120px;
+  height: 110px;
+}
+
+footer {
+  text-align: center;
+  padding: 2.5px;
+  color: white;
+  background-color: #ffc83f;
+}
+
+canvas {
+  background-color: #fffbfa;
+  border: 4px solid #493b38;
+  width: 650px;
+  height: 450px;
+}
+
+.info {
+	width:700px;
+	height:auto;
+	text-align: justify;
+	color: #ffc83f;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.info2 {
+	width:700px;
+	height:auto;
+	text-align: justify;
+	color: #d62727;
+	font-size: 17px;
+	font-weight: bold;
+}
